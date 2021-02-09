@@ -9,15 +9,10 @@ fetch("page.php", {
     method: "POST",
     body: data_form
 })
-.then(function(response){
-    if(response.ok){
-        response.text().then(function(myText){
-            
-        })
-    }else{
-        console.log("Fail");
-    }
+.then(response => response.json())
+.then(responseJson => {
+    
 })
-.catch(function(error){
-    console.log("Error");
-})
+.catch(error => {
+    console.log("Erro na requisição: " + fail);
+}) 
