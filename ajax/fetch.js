@@ -6,6 +6,7 @@ data_form.append("key_name", "value");
 data_form.append("key_name2", "value");
 
 const myHeaders = new Headers();
+myHeaders.append("Accept", "application/json");
 myHeaders.append("Content-Type", "application/json");
 
 fetch("page.php", {
